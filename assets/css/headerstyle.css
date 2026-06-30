@@ -1,0 +1,69 @@
+.site-header {
+    background: #222;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.site-header a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.site-header a:hover {
+    color: gold;
+}
+
+button {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #f1c40f;
+    transform: translateY(-2px);
+}
+
+/* Form */
+form {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+input[type="submit"]:hover {
+    background-color: #f1c40f;
+    transform: translateY(-2px);
+}

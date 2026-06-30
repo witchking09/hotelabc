@@ -1,0 +1,88 @@
+
+body {
+    background-image: url('../images/background.jfif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Lucida Handwriting", cursive;
+    color: white;
+}
+
+head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: #333;
+    padding: 10px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Heading */
+h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+button {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #f1c40f;
+    transform: translateY(-2px);
+}
+
+/* Form */
+form {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+input[type="submit"]:hover {
+    background-color: #f1c40f;
+    transform: translateY(-2px);
+}

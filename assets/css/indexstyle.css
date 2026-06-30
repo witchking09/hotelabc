@@ -1,0 +1,87 @@
+/* Body and page setup */
+body {
+    background-color: #20B2AA; /* page background */
+    font-family: Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;         /* centers header and form horizontally */
+    padding-top: 50px;          /* space from top */
+    margin: 0;
+}
+
+/* Header */
+h1 {
+    color: white;
+    font-family: "Times New Roman", serif;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+/* Form */
+form {
+    width: 350px;               /* smaller form width */
+    padding: 20px 30px;         /* inner spacing */
+    margin: 0 auto;             /* center horizontally */
+    background-color: crimson;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;            /* labels aligned left */
+}
+
+/* Fieldsets */
+fieldset {
+    border: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin: 8px 0 4px;
+    color: white;               /* label text color */
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Buttons */
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;               /* full width of form */
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(220,220,220);
+}
+
+/* Radio buttons styling (optional) */
+fieldset input[type="radio"] {
+    margin-right: 5px;
+}
+fieldset label {
+    display: inline-block;
+    margin-right: 15px;
+    color: white;
+    font-weight: normal;
+}
