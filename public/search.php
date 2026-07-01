@@ -46,7 +46,7 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         $data[] = $row;
     }
-
+	
     echo "<table border='1'>";
     echo "<tr>
             <th>Hotelname</th>
@@ -69,10 +69,13 @@ if ($result->num_rows > 0) {
         echo "<td>{$row['city']}</td>";
         echo "<td>{$row['state']}</td>";
         echo "<td>{$row['country']}</td>";
-        echo "<td>{$row['postal_code']}</td>";
-        echo "<td>{$row['phone_number']}</td>";
-        echo "<td>{$row['email']}</td>";
+        echo "<td>{$row['price_per_night']}</td>";
         echo "<td>{$row['number_of_rooms']}</td>";
+		echo "<td>
+				<a href='view_hotel.php?id={$row['hotel_id']}'>
+                View Details
+				</a>
+			  </td>";
         echo "</tr>";
     }
 

@@ -25,9 +25,7 @@ include "D:/xampp/htdocs/hotelabc/includes/config.php";
     </div>
 	
 <footer>
-
 <?php include FOOTER;?>
-
 </footer>	
 	
 </body>
