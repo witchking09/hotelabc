@@ -1,5 +1,6 @@
 <?php
 session_start();
+include "D:/xampp/htdocs/hotelabc/includes/config.php";
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +12,7 @@ session_start();
 <title>Hotel</title>
 
 <head>
-<?php include __DIR__ . "/../includes/header.php";?>
+<?php include HEADER;?>
 <link rel="stylesheet" href="indexstyle.css">
 </head>
 
@@ -52,7 +53,7 @@ session_start();
 
 <footer>
 
-<?php include __DIR__ . "/../includes/footer.php";?>
+<?php include FOOTER;?>
 
 </footer>
 
@@ -61,7 +62,6 @@ session_start();
 </html>
 
 <?php
-include("database.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $hname = filter_input(INPUT_POST, "hname", FILTER_SANITIZE_SPECIAL_CHARS);

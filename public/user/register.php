@@ -1,5 +1,6 @@
 <?php
 session_start();
+include "D:/xampp/htdocs/hotelabc/includes/config.php";
 ?>
 
 <!DOCTYPE html>
@@ -9,13 +10,13 @@ session_start();
 <title>Hotel</title>
 
 <head>
-<link rel="stylesheet" href="../assets/css/indexstyle.css">
+<link rel="stylesheet" href="D:/xampp/htdocs/hotelabc/assets/css/hotelstyle.css">
 </head>
 
 <body>
 
 <header>
-<?php include __DIR__ . "/../includes/header.php";?>
+<?php include HEADER;?>
 </header>
 
 <h1> Konto erstellen </h1>
@@ -65,14 +66,13 @@ session_start();
 
 <footer>
 
-<?php include __DIR__ . "/../includes/footer.php";?>
+<?php include FOOTER;?>
 
 </footer>
 
 </html>
 
 <?php
-include("database.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	

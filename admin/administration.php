@@ -1,7 +1,7 @@
 <?php 
 session_start();
 
-include ("../includes/database.php");
+include "D:/xampp/htdocs/hotelabc/includes/config.php";
 
 if (isset($_SESSION["benutzerRolle"]) && $_SESSION["benutzerRolle"] == "admin") {
 	
@@ -24,17 +24,21 @@ if (isset($_SESSION["benutzerRolle"]) && $_SESSION["benutzerRolle"] == "admin") 
 
 <!DOCTYPE html>
 
+<head>
+<link rel="stylesheet" href="../assets/css/indexstyle.css">
+</head>
+
 <body>
 
 <header>
 
-	<?php include __DIR__ . "/../includes/header.php";?>
+	<?php include HEADER;?>
 
 </header>
 
 <footer>
 
-	<?php include __DIR__ . "/../includes/footer.php";?>
+	<?php include FOOTER;?>
 
 </footer>
 

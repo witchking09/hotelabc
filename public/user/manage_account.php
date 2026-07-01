@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("../includes/database.php");
+include "D:/xampp/htdocs/hotelabc/includes/config.php";
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ include("../includes/database.php");
 <html>
 
 <header>
-<?php include __DIR__ . "/../includes/header.php";?>
+<?php include HEADER;?>
 </header>
 
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
@@ -47,7 +47,7 @@ include("../includes/database.php");
 </form>
 
 <footer>
-	<?php include __DIR__ . "/../includes/footer.php";?>
+	<?php include FOOTER;?>
 </footer>
 
 </html>

@@ -1,5 +1,6 @@
 <?php
 session_start();
+include "D:/xampp/htdocs/hotelabc/includes/config.php";
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +13,7 @@ session_start();
 <body>
 
 <header>
-<?php include __DIR__ . "/../includes/header.php";?>
+<?php include HEADER;?>
 </header>
     
     <div class="container">
@@ -21,7 +22,7 @@ session_start();
 	
 <footer>
 
-<?php include __DIR__ . "/../includes/footer.php";?>
+<?php include FOOTER;?>
 
 </footer>	
 	

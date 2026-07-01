@@ -1,5 +1,6 @@
 <?php
 session_start();
+include "D:/xampp/htdocs/hotelabc/includes/config.php";
 ?>
 
 <html>
@@ -15,7 +16,7 @@ session_start();
 <body>
 
 <header>
-<?php include __DIR__ . "/../includes/header.php";?>
+<?php include HEADER;?>
 </header>
 
 <a href="homepage.html" target="_self" rel="noopener noreferrer">
@@ -26,26 +27,9 @@ session_start();
 <br>
 <br>
 
-<form action="search.php" method="post">
-            <label for="search">Search</label><br>
-            <input type="text" name="search" id="search"><br>
-            <input type="submit" value="Suchen">
-</form>
-
-<footer>
-
-<?php include __DIR__ . "/../includes/footer.php";?>
-
-</footer>
-
-</body>
-
-</html>
-
 <?php
 
 $search = $_POST['search'];
-include ("database.php");
 
 $sql = "SELECT * FROM hotels 
 		WHERE (hotel_name REGEXP '$search' 
@@ -104,7 +88,19 @@ if ($result->num_rows > 0) {
 	echo "</tr>";
 	echo '<br>';
 	echo '<a href="homepage.html" target="_self" rel="noopener noreferrer"> <button type="button">Zurück</button> </a>';
+	echo '<br>';
+	echo '<br>';
 }
 
 $conn->close();
 ?>
+
+<footer>
+
+<?php include FOOTER;?>
+
+</footer>
+
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("database.php");
+include "D:/xampp/htdocs/hotelabc/includes/config.php";
 
 if (!isset($_SESSION["benutzerRolle"]) || $_SESSION["benutzerRolle"] != "admin") {
     die("No permission");

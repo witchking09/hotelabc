@@ -1,3 +1,9 @@
+<?php 
+
+include "D:/xampp/htdocs/hotelabc/includes/config.php";
+
+?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -7,7 +13,7 @@
 <body>
 
 <header>
-<?php include __DIR__ . "/../includes/header.php";?>
+<?php include HEADER;?>
 </header>
 
 <div>
@@ -16,7 +22,7 @@
 
 <footer>
 
-<?php include __DIR__ . "/../includes/footer.php";?>
+<?php include FOOTER;?>
 
 </footer>
 

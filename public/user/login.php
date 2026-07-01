@@ -1,5 +1,6 @@
 <?php
 session_start();
+include "D:/xampp/htdocs/hotelabc/includes/config.php";
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +16,7 @@ session_start();
 <body>
 
 <header>
-<?php include __DIR__ . "/../includes/header.php";?>
+<?php include HEADER;?>
 </header>
 
 <h1> Einloggen </h1>
@@ -42,7 +43,7 @@ session_start();
 
 <footer>
 
-<?php include __DIR__ . "/../includes/footer.php";?>
+<?php include FOOTER;?>
 
 </footer>
 
@@ -51,7 +52,6 @@ session_start();
 </html>
 
 <?php
-include("database.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
@@ -84,7 +84,7 @@ if ($result->num_rows == 1) {
         $stmt->close();
         mysqli_close($conn);
 
-        header("Location: /hotelabc/homepage/homepage.php");
+        header("Location: /hotelabc/public/homepage.php");
         exit();
 
     } else {
