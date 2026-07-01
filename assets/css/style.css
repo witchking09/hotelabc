@@ -1,4 +1,25 @@
 
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background: transparent;
+    color: white;
+    padding: 20px;
+    z-index: 1000;
+	text-align: center;
+} */
+
 body {
     background-image: url('../images/background.jfif');
     background-size: cover;
@@ -6,9 +27,12 @@ body {
     height: 100vh;
     margin: 0;
     color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-head {
+/*head {
     position: fixed;
     top: 0;
     left: 0;
@@ -19,7 +43,7 @@ head {
 
     display: flex;
     gap: 10px;
-}
+}*/
 
 .container {
     background-color: rgba(0, 0, 0, 0.6);
@@ -28,15 +52,17 @@ head {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     width: 90%;
     max-width: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
-/* Heading */
 h1 {
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-/* Buttons */
 button {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
     background-color: white;
@@ -55,18 +81,17 @@ button:hover {
     transform: translateY(-2px);
 }
 
-/* Form */
 form {
     margin-top: 20px;
 }
 
 input[type="text"] {
-    width: 100%;
+    /* width: 100%; */
     padding: 8px;
     box-sizing: border-box;
     border: none;
     border-radius: 4px;
-    text-align: center;
+    /* text-align: center; */
     font-size: 16px;
 }
 
@@ -84,4 +109,15 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #f1c40f;
     transform: translateY(-2px);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: transparent;
+    color: white;
+    text-align: center;
+    padding: 15px;
+	font-size: 24px;
 }

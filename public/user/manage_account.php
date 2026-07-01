@@ -7,6 +7,12 @@ include "D:/xampp/htdocs/hotelabc/includes/config.php";
 
 <html>
 
+<head>
+	<title>HotelABC</title>
+	<link rel="stylesheet" href="/hotelabc/assets/css/style.css">
+	<link rel="icon" type="image/png" href="/hotelabc/assets/images/favicon.png">
+</head>
+
 <header>
 <?php include HEADER;?>
 </header>

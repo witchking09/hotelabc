@@ -16,27 +16,43 @@ $sql = "SELECT * FROM benutzer";
     }
 ?>
 
-<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+<!DOCTYPE html>
 
-<fieldset>
+<html>
 
-    <label>Vorname:</label><br>
-    <input type="text" name="vname" value="<?= htmlspecialchars($row['VName']) ?>" required><br>
+<head>
+    <title>HotelABC</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="icon" type="image/png" href="/hotelabc/assets/images/favicon.png">
+</head>
 
-    <label>Nachname:</label><br>
-    <input type="text" name="nname" value="<?= htmlspecialchars($row['NName']) ?>" required><br>
+<body>
 
-    <label>Geburtsdatum:</label><br>
-    <input type="date" name="gebdat" value="<?= htmlspecialchars($row['GebDat']) ?>" required><br>
+	<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
 
-    <label>Telefonnummer:</label><br>
-    <input type="text" name="telnr" value="<?= htmlspecialchars($row['TelNr']) ?>" required><br>
+	<fieldset>
 
-    <label>Email:</label><br>
-    <input type="email" name="email" value="<?= htmlspecialchars($row['email']) ?>" required><br>
+		<label>Vorname:</label><br>
+		<input type="text" name="vname" value="<?= htmlspecialchars($row['VName']) ?>" required><br>
 
-    <button type="submit" class="btn-edit">Submit</button>
+		<label>Nachname:</label><br>
+		<input type="text" name="nname" value="<?= htmlspecialchars($row['NName']) ?>" required><br>
 
-</fieldset>
+		<label>Geburtsdatum:</label><br>
+		<input type="date" name="gebdat" value="<?= htmlspecialchars($row['GebDat']) ?>" required><br>
 
-</form>
+		<label>Telefonnummer:</label><br>
+		<input type="text" name="telnr" value="<?= htmlspecialchars($row['TelNr']) ?>" required><br>
+
+		<label>Email:</label><br>
+		<input type="email" name="email" value="<?= htmlspecialchars($row['email']) ?>" required><br>
+
+		<button type="submit" class="btn-edit">Submit</button>
+
+	</fieldset>
+
+	</form>
+
+</body>
+
+</html>

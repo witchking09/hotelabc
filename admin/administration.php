@@ -25,7 +25,9 @@ if (isset($_SESSION["benutzerRolle"]) && $_SESSION["benutzerRolle"] == "admin") 
 <!DOCTYPE html>
 
 <head>
-<link rel="stylesheet" href="../assets/css/indexstyle.css">
+    <title>HotelABC</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="icon" type="image/png" href="/hotelabc/assets/images/favicon.png">
 </head>
 
 <body>

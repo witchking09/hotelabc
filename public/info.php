@@ -6,10 +6,13 @@ include "D:/xampp/htdocs/hotelabc/includes/config.php";
 
 <!DOCTYPE HTML>
 <html>
+
 <head>
-    <title>Über Uns</title>
-    <link rel="stylesheet" href="../assets/css/hotelstyle.css">
+    <title>HotelABC</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="icon" type="image/png" href="/hotelabc/assets/images/favicon.png">
 </head>
+
 <body>
 
 <header>

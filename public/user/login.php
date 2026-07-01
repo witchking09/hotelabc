@@ -7,10 +7,10 @@ include "D:/xampp/htdocs/hotelabc/includes/config.php";
 
 <html>
 
-<title>Hotel</title>
-
 <head>
-<link rel="stylesheet" href="../assets/css/indexstyle.css">
+	<title>HotelABC</title>
+	<link rel="stylesheet" href="/hotelabc/assets/css/style.css">
+	<link rel="icon" type="image/png" href="/hotelabc/assets/images/favicon.png">
 </head>
 
 <body>

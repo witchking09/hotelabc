@@ -1,5 +1,5 @@
 <?php 
 
-echo date("Y") . " HotelABC all rights reserved"; 
+echo date("Y") . " © HotelABC"; 
 
 ?>

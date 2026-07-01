@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
+<html>
 
-<head>
-<link rel="stylesheet" href="headerstyle.css">
-</head>
+<body>
 
 <header class="site-header">
-		
+	
+	<div>
 		<?php if ($_SERVER['PHP_SELF'] != "/hotelabc/public/homepage.php" ): 
 		?>
 			<a href="http://localhost/hotelabc/public/homepage.php">
@@ -22,7 +22,7 @@
 			  && $_SERVER['PHP_SELF'] != "/hotelabc/administration/administration.php"): 
 		?>
 			
-			<a href="http://localhost/hotelabc/administration/administration.php">
+			<a href="http://localhost/hotelabc/admin/administration.php">
 			<button type="button">Administration</button>
 			</a>
 			
@@ -81,3 +81,7 @@
             <input type="text" name="search" id="search"><br>
             <input type="submit" value="Suchen">
         </form>
+	</div>	
+	
+	</body>
+</html>

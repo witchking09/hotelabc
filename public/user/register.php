@@ -11,6 +11,7 @@ include "D:/xampp/htdocs/hotelabc/includes/config.php";
 
 <head>
 <link rel="stylesheet" href="D:/xampp/htdocs/hotelabc/assets/css/hotelstyle.css">
+<link rel="icon" type="image/png" href="/hotelabc/assets/images/favicon.png">
 </head>
 
 <body>

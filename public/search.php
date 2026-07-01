@@ -3,14 +3,13 @@ session_start();
 include "D:/xampp/htdocs/hotelabc/includes/config.php";
 ?>
 
+<!DOCTYPE html>
+
 <html>
 
 <head>
-
-<title>Hotel suche</title>
-
-<link rel="stylesheet" href="../assets/css/hotelstyle.css">
-
+	<title>Hotel suche</title>
+	<link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
